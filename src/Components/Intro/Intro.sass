@@ -2,19 +2,35 @@
 	height: 350px
 	background-color: #015562
 	overflow: hidden
-	display: flex
+	text-align: center
+
+	.jmenoBox
+		color: white
+		background-color: #015562
+		z-index: 1
+		font-size: 35px
+		text-transform: uppercase
+		text-align: left
+		position: absolute
+		border: 5px solid white
+		padding: 15px
+		margin-left: auto
+    	margin-right: auto
+		margin-top: 100px
 
 	.introImages
 		display: flex
 
-	img
-		height: 350px
+		img
+			height: 350px
 
-	.boss
-		position: relative
-		right: 350px
-		bottom: -50px
+		.boss
+			position: relative
+			right: 350px
+			bottom: -50px
+			z-index: 2
 
-	.cubeBG
-		position: relative
-		left: -275px
+		.cubeBG
+			position: relative
+			left: -275px
+			z-index: 0
