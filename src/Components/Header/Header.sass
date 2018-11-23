@@ -1,4 +1,7 @@
 .Header
+	.navbar
+		flex-wrap: nowrap
+
 	.navbar-brand
 		width: 100%
 		display: flex
@@ -7,27 +10,38 @@
 	.bg-light
 		background-color: white !important
 
+	.navbar-nav .nav-link 
+		padding-left: 15px
+
 	.navbar-toggler
 		border-color: white
 		float: right
 
 	.navbar-toggler-icon
 		background-image: url('./menu.svg')
-		width: 50px
+		width: 35px
 
 	button:focus
 		outline: none
 
 	.navbar-collapse
-		z-index: 5
+		z-index: 3
 		background-color: white
 		position: absolute
 		width: 100%
-		margin: 93px 0 0 0
+		top: 55px
+		left: 0
+		margin: 0 0 0 0
+		text-align: left
 
 	img
-		width: 200px
+		width: 150px
 		position: absolute
-		z-index: 1
+		left: 0
+		right: 0
+		top: 30px
+		margin-left: auto
+		margin-right: auto
+		z-index: 4
 
 
