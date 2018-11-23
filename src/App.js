@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.sass';
 import Header from './Components/Header/Header';
 import Intro from './Components/Intro/Intro';
+import Vyhod from './Components/Vyhod/Vyhod';
 import Vyber from './Components/Vyber/Vyber';
 
 class App extends Component {
@@ -10,6 +11,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Intro />
+        <Vyhod />
         <Vyber />
       </div>
     );
