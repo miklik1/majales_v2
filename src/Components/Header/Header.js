@@ -11,7 +11,6 @@ import {
  } from 'reactstrap';
 import logo from './logo.svg';
 
-
 class Header extends Component {
 	constructor(props) {
     super(props);
@@ -22,15 +21,22 @@ class Header extends Component {
     };
   }
   toggle() {
+    var x = document.getElementById("burgr");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
     this.setState({
-      isOpen: !this.state.isOpen
+      isOpen: !this.state.isOpen,
     });
   }
+
   render() {
     return (
       <div className="Header">
               <Navbar color="light" light expand="md">
-          <NavbarBrand href="/"><img src={logo} alt='logo' /></NavbarBrand>
+          <NavbarBrand  id="burgr" href="/"><img src={logo} alt='logo' /></NavbarBrand>
           <span style={{color: 'white'}}>o</span>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
