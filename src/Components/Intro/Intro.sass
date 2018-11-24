@@ -1,3 +1,5 @@
+@import "../../mixins.sass"
+
 .Intro
 	height: 400px
 	background-color: #015562
@@ -5,10 +7,11 @@
 	text-align: center
 
 	.jmenoBox
+		+tarrum
 		color: white
 		background-color: #015562
 		z-index: 1
-		font-size: 50px
+		font-size: 65px
 		text-transform: uppercase
 		text-align: left
 		position: absolute
@@ -28,7 +31,7 @@
 			position: relative
 			right: 450px
 			bottom: -50px
-			z-index: 2
+			z-index: 5
 
 		.cubeBG
 			position: relative

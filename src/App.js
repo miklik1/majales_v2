@@ -4,6 +4,7 @@ import Header from './Components/Header/Header';
 import Intro from './Components/Intro/Intro';
 import Vyhod from './Components/Vyhod/Vyhod';
 import Vyber from './Components/Vyber/Vyber';
+import Nejsme from './Components/Nejsme/Nejsme';
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
         <Intro />
         <Vyhod />
         <Vyber />
+        <Nejsme />
       </div>
     );
   }

@@ -1,3 +1,5 @@
+@import "../../mixins.sass"
+
 .Vyber
   .sekce1, .sekce2
     height: 200px
@@ -7,8 +9,9 @@
     align-items: center
 
     p
+      +tarrum
       border: 5px solid white
-      font-size: 35px
+      font-size: 45px
       text-transform: uppercase
       width: 250px
 
@@ -32,6 +35,7 @@
 
     p
       background: #3D0077
+      line-height: 45px
 
   @media (max-width: 768px)
     .razeni
