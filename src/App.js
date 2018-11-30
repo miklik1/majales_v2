@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { ParallaxProvider } from 'react-scroll-parallax';
 import './App.sass';
 import Header from './Components/Header/Header';
 import Intro from './Components/Intro/Intro';
@@ -9,13 +10,15 @@ import Nejsme from './Components/Nejsme/Nejsme';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Header />
-        <Intro />
-        <Vyhod />
-        <Vyber />
-        <Nejsme />
-      </div>
+	    <ParallaxProvider>
+	      <div className="App">
+	        <Header />
+	        <Intro />
+	        <Vyhod />
+	        <Vyber />
+	        <Nejsme />
+	      </div>
+	     </ParallaxProvider>
     );
   }
 }

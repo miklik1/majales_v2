@@ -35,26 +35,23 @@ class Header extends Component {
   render() {
     return (
       <div className="Header">
-              <Navbar color="light" light expand="md">
+         <Navbar color="light" light expand="md">
           <NavbarBrand  id="burgr" href="/"><img src={logo} alt='logo' /></NavbarBrand>
           <span style={{color: 'white'}}>o</span>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">Domů</NavLink>
+                <NavLink href="/components/" className="active">Domů</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="https://github.com/reactstrap/reactstrap">Line up</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">Doprovodný program</NavLink>
-              </NavItem>
-              <NavItem>
                 <NavLink href="https://github.com/reactstrap/reactstrap">O nás</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">Koupit lístek</NavLink>
+                <NavLink href="https://github.com/reactstrap/reactstrap"><p className="Koupit">Koupit lístek</p></NavLink>
               </NavItem>
             </Nav>
           </Collapse>
