@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Vyber.sass';
 import guitars from './guitars.png';
+import shoes from './shoes.png';
 
 class Vyber extends Component {
   render() {
@@ -15,7 +16,10 @@ class Vyber extends Component {
             <img className='guitars' src={guitars} alt='guitars' />
           </div>
         </div>
-        <div className="sekce3"><p>ROZHOVORY S OSOBNOSTMI</p></div>
+        <div className="sekce3">
+          <p>ROZHOVORY S OSOBNOSTMI</p>
+          <img className='shoes' src={shoes} alt='shoes' />
+        </div>
       </div>
     );
   }

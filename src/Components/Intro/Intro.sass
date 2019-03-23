@@ -3,8 +3,12 @@
 .Intro
 	height: 400px
 	background-color: #015562
+	position: relative
 	overflow: hidden
 	text-align: center
+
+	@media (min-width: 1024px)
+		height: 600px
 
 	.jmenoBox
 		+tarrum
@@ -17,60 +21,81 @@
 		position: absolute
 		border: 3px solid white
 		padding: 15px
-		left: 40px
+		left: 10%
 		margin-top: 110px
 		line-height: 65px
 
-	.introImages
-		display: flex
-
-		img
-			height: 400px
-
-		.boss
-			position: relative
-			right: 450px
-			bottom: -50px
-			z-index: 5
-
-		.cubeBG
-			position: relative
-			left: -315px
-			z-index: 0
-
-	@media (min-width: 768px)
-		.jmenoBox
-			left: 150px
-			font-size: 75px
-		
-		.introImages
-				img
-					height: 400px
-
-				.boss
-					right: 200px
-					bottom: -50px
-
-				.cubeBG
-					left: -200px
-
-@media (min-width: 1024px)
-	.Intro
-		height: 600px
-
-		.jmenoBox
-			left: 150px
+		@media (min-width: 1024px)
 			font-size: 100px
-			line-height: 85px
+			line-height: 100px
+
+		@media (min-width: 1400px)
+			font-size: 120px
+			line-height: 110px
+			margin-top: 150px
+			left: 6%
+
+	.jmenoBox2
+		+tarrum
+		color: white
+		background-color: #015562
+		z-index: 1
+		font-size: 65px
+		text-transform: uppercase
+		text-align: left
+		position: absolute
+		border: 3px solid white
+		padding: 15px
+		left: 50%
+		margin-top: 110px
+		line-height: 65px
+		visibility: hidden
+
+		@media (min-width: 1024px)
+			visibility: visible
+			font-size: 100px
+			line-height: 100px
+
+		@media (min-width: 1400px)
+			font-size: 120px
+			line-height: 110px
 			margin-top: 150px
 
-		.introImages
-				img
-					height: 600px
+	.boss
+		position: absolute
+		max-width: 300px
+		bottom: -100px
+		left: 40%
+		z-index: 5
 
-				.boss
-					right: 200px
-					bottom: -50px
+		@media (min-width: 600px)
+			left: 53%
 
-				.cubeBG
-					left: -200px
+		@media (min-width: 768px)
+			left: 57%
+
+		@media (min-width: 1024px)
+			left: 20%
+			max-width: 400px
+
+	.lvcas
+		position: absolute
+		max-width: 400px
+		bottom: -100px
+		left: 70%
+		z-index: 5
+		visibility: hidden
+
+		@media (min-width: 1024px)
+			visibility: visible
+
+	.cubeBG
+		position: absolute
+		max-width: 600px
+		margin-left: -100px
+		right: 51%
+		z-index: 0
+
+		@media (min-width: 1024px)
+			right: 70%
+			max-width: 800px

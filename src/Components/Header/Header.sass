@@ -22,6 +22,13 @@
 		padding-left: 15px
 		color: black
 
+		@media (min-width: 768px)
+			padding: 15px 10px
+
+		@media (min-width: 1440px)
+			font-size: 1.5em
+			padding: 25px 15px
+
 	.navbar-toggler
 		border-color: white
 		float: right
@@ -43,7 +50,7 @@
 		margin: 0 0 0 0
 		text-align: left
 
-	img
+	.logo
 		width: 150px
 		position: absolute
 		left: 0
@@ -54,12 +61,50 @@
 		z-index: 4
 		transition: ease-in-out 1s
 
+		@media (min-width: 768px)
+			width: 150px
+			top: 20px
+			left: 5px
+			margin: 0
+
+		@media (min-width: 900px)
+			width: 270px
+			top: 10px
+			left: 0px
+			margin: 0
+
 	.active
 		color: #015562 !important
 
+	.icons
+		text-align: center
+
+		@media (min-width: 768px)
+			display: none
+
+		@media (min-width: 1024px)
+			visibility: hidden
+			display: inline-block
+
+	.fb, .ig
+		width: 50px
+
+	.fb
+		margin-right: 20px
+
+		@media (min-width: 768px)
+			margin-right: 10px
+
+	.navbar-nav 
+	    border-bottom: 3px solid #015562
+
 	@media (min-width: 768px)
+
 		.navbar
 			padding: 0 10%
+
+			.nav-item
+				font-size: 15px
 
 			.navbar-collapse
 				top: 0
@@ -67,21 +112,17 @@
 				-moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75)
 				box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5)
 
-			img
-				width: 200px
-				top: 15px
-				left: 20px
-				margin: 0
 
-			.nav-link
-				padding: 15px 10px !important
 
-			.Koupit
-				border: 2px solid black
-				border-radius: 25px
-				margin: 0
-				padding: 5px 30px
-				float: right
-				margin-top: -7px
+			.navbar-nav 
+	    		border-bottom: none
+
+
+
+		.fb, .ig
+			display: inline-block !important
+			width: 40px !important
+
+
 
 
