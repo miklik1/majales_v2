@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Vyber.sass';
-import guitars from './guitars.png';
-import shoes from './shoes.png';
+import guitars from './guitars-pc.png';
+import shoes from './shoes-pc.png';
 
 class Vyber extends Component {
   render() {

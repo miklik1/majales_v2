@@ -16,18 +16,32 @@
 
   p
     margin: 0 auto
+    @media (min-width: 350px)
+      font-size: 15px
+    @media (min-width: 400px)
+      font-size: 16px
+    @media (min-width: 450px)
+      font-size: 17px
+    @media (min-width: 600px)
+      font-size: 18px
+    @media (min-width: 1000px)
+      font-size: 20px
+    @media (min-width: 1200px)
+      font-size: 24px
+    @media (min-width: 1400px)
+      font-size: 26px
 
   .razeni
     font-size: 25px
     color: #015562
     +tarrum
 
-  @media (max-width: 950px)
-    .razeni
+    @media (max-width: 950px)
       flex-direction: column !important 
 
   .sutb
     margin-top: -10px
+
 
   .utb
     margin-top: -30px

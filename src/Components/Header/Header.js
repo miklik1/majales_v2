@@ -61,7 +61,7 @@ class Header extends Component {
               <NavItem>
                 <NavLink href="https://github.com/reactstrap/reactstrap" className="borderCenter">O nás</NavLink>
               </NavItem>
-              <NavItem>
+              <NavItem className="center">
                 <div className="icons">
                   <img className='fb' src={fb} alt='fb' />
                   <img className='ig' src={ig} alt='ig' />
