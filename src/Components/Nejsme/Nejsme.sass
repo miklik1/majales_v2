@@ -6,43 +6,43 @@
   .kopyto
     color: #015562
     margin-bottom: 15px
+    @media (min-width: 700px)
+      margin: 0px 0px 40px 0px
 
   img
     width: 250px
     margin: 0 auto
-
-  .utb
-    width: 290px
+    @media (min-width: 1024px)
+      width: 275px
+      margin: 0px 10px
+    @media (min-width: 1440px)
+      width: 300px
+      margin: 0px 10px
+    @media (min-width: 1920px)
+      width: 375px
 
   p
     margin: 0 auto
     @media (min-width: 350px)
-      font-size: 15px
-    @media (min-width: 400px)
-      font-size: 16px
-    @media (min-width: 450px)
-      font-size: 17px
-    @media (min-width: 600px)
-      font-size: 18px
-    @media (min-width: 1000px)
       font-size: 20px
+    @media (min-width: 400px)
+      font-size: 25px
+    @media (min-width: 450px)
+      font-size: 30px
+    @media (min-width: 600px)
+      font-size: 35px
+    @media (min-width: 1000px)
+      font-size: 40px
     @media (min-width: 1200px)
-      font-size: 24px
+      font-size: 45px
     @media (min-width: 1400px)
-      font-size: 26px
+      font-size: 50px
 
   .razeni
+    align-items: center
     font-size: 25px
     color: #015562
     +tarrum
 
-    @media (max-width: 950px)
+    @media (max-width: 1400px)
       flex-direction: column !important 
-
-  .sutb
-    margin-top: -10px
-
-
-  .utb
-    margin-top: -30px
-    margin-left: -30px
