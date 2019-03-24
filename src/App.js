@@ -10,7 +10,6 @@ import Nejsme from './Components/Nejsme/Nejsme';
 class App extends Component {
   render() {
     return (
-	    <ParallaxProvider>
 	      <div className="App">
 	        <Header />
 	        <Intro />
@@ -18,7 +17,6 @@ class App extends Component {
 	        <Vyber />
 	        <Nejsme />
 	      </div>
-	     </ParallaxProvider>
     );
   }
 }
