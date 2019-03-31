@@ -47,7 +47,7 @@ class Header extends Component {
                 <NavLink href="/components/" className="active borderCenter">Domů</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap" className="borderCenter">Line up</NavLink>
+                <NavLink href="../Intro/Intro/Intro/Intro" className="borderCenter">Line up</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="https://github.com/reactstrap/reactstrap" className="borderCenter">Doprovodný program</NavLink>
