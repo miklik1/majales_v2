@@ -9,7 +9,7 @@ import Lineup from '../../Lineup';
 class Vyber extends Component {
   render() {
     return (
-      <Router>
+      <div>
       <div className="Vyber">
         <div className="d-flex bd-highlight razeni">
           <div className="p-2 flex-fill bd-highlight sekce1">
@@ -26,8 +26,8 @@ class Vyber extends Component {
         </div>
       </div>
 
-      <Route path="/Lineup/" component={Lineup} />
-      </Router>
+      <Route path="/Lineup" component={Lineup} />
+      </div>
     );
   }
 }
