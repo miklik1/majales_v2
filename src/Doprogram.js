@@ -19,6 +19,28 @@ class Home extends Component {
         Proto pro vás máme v rámci předmajálesového času připraveny čtyři nadupané akce, každá ze 
         zcela jiného soudku, ale s přesným účelem - pobavit vás! </p>
       </div>
+       <div className="seznam">
+        <div className="d-flex bd-highlight razeni">
+          <div className="p-2 flex-fill bd-highlight sekce1">
+            <p>Souboj kapel</p>
+            <span className="popis">Nejtlustší česká celebrita, vizionář a mecenáš přijede se svou Demo Crew oznámit, že je Mládí v trapu. 
+              Alternativní rap z jiné dimenze, vlna absurdna, ale v neposlední řadě humor, který ti prodlouží život, když se s ním “svezeš”!
+            </span>
+            <span className="poslech">
+              POSLECH
+            </span>
+          </div>
+          <div className="p-2 flex-fill bd-highlight sekce2">
+            <p>Kino</p>
+            <span className="popis">Nejtlustší česká celebrita, vizionář a mecenáš přijede se svou Demo Crew oznámit, že je Mládí v trapu. 
+              Alternativní rap z jiné dimenze, vlna absurdna, ale v neposlední řadě humor, který ti prodlouží život, když se s ním “svezeš”!
+            </span>
+            <span className="poslech">
+              POSLECH
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
     );
   }
