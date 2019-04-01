@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.sass';
 import './Lineup.sass';
-import Intro2 from './Components/Intro/Intro2';
+import './Components/Vyhod/Vyhod.sass';
+import Intro3 from './Components/Intro/Intro3';
 import demo from './demo.png'
 import udg from './udg.png'
 
@@ -10,7 +11,14 @@ class Home extends Component {
   render() {
   return (
     <div className="App">
-      <Intro2 />
+      <Intro3 />
+      <div className="Vyhod">
+        <p className="info-line">7. 5. 2019  I   Zlínský lyžařský svah   I   Vstup zdarma</p>
+        <p className="kopyto">Dojdi si vyhodit z kopýtka!</p>
+        <p className="obyc">Myslíme si, že každý by se měl někdy uvolnit z pracovního stresu a vyhodit si z kopýtka.
+              Znáš to, když se násada na sprše promění v mikrofon? Dojdi na Majáles, zahoď všechny 
+              zábrany a ukaž všem své pravé já. Abys věděl, že je normální žít život naplno, připravili jsme si rozhovory s několika Zlíňáky.</p>
+      </div>
       <div className="d-flex bd-highlight razeni lineup">
           <div className="p-2 flex-fill bd-highlight sekce1 b">
             <p className="kopyto">Mobil CZ</p>

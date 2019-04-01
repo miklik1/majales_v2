@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Home from './Home';
 import Lineup from './Lineup';
+import Doprogram from './Doprogram';
+import Soutez from './Soutez';
 import './Components/Header/Header.sass';
 import {
   Collapse,
@@ -54,10 +56,10 @@ class Header extends Component {
                 <NavLink className="borderCenter"><Link to="/Lineup">Line-up</Link></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap" className="borderCenter">Doprovodný program</NavLink>
+                <NavLink className="borderCenter"><Link to="/Doprogram">Doprovodný program</Link></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap" className="borderCenter">Soutěž kapel</NavLink>
+                <NavLink className="borderCenter"><Link to="/Soutez">Soutěž kapel</Link></NavLink>
               </NavItem>
               <NavItem className="borderCenter">
                 <NavLink href="https://github.com/reactstrap/reactstrap" className="borderCenter">Rozhovory</NavLink>
@@ -67,8 +69,8 @@ class Header extends Component {
               </NavItem>
               <NavItem className="center">
                 <div className="icons">
-                  <img className='fb' src={fb} alt='fb' />
-                  <img className='ig' src={ig} alt='ig' />
+                  <a href="https://www.facebook.com/MajalesUTB/" target="_blank"><img className='fb' src={fb} alt='fb' /></a>
+                  <a href="https://www.instagram.com/majalesutb/" target="_blank"><img className='ig' src={ig} alt='ig' /></a>
                 </div>
               </NavItem>
             </Nav>
@@ -78,6 +80,9 @@ class Header extends Component {
 
       <Route path="/" exact component={Home} />
       <Route path="/Lineup" component={Lineup} />
+      <Route path="/Doprogram" component={Doprogram} />
+      <Route path="/Soutez" component={Soutez} />
+
     </Router>
     );
   }

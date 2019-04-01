@@ -1,0 +1,203 @@
+@import "./mixins.sass"
+
+.lineup
+	margin-top: 50px
+	.kopyto
+		+tarrum
+		font-size: 31px
+		margin-top: 15px
+		line-height: 20px
+		@media (min-width: 350px)
+			font-size: 33px
+		@media (min-width: 375px)
+			font-size: 34px
+		@media (min-width: 400px)
+			font-size: 35px
+		@media (min-width: 425px)
+			font-size: 36px
+		@media (min-width: 450px)
+			font-size: 40px
+		@media (min-width: 475px)
+			font-size: 50px
+			line-height: 30px
+		@media (min-width: 700px)
+			margin: 30px 0px 50px 0px
+			font-size: 70px
+			line-height: 50px
+		@media (min-width: 1000px)
+			font-size: 80px
+		@media (min-width: 1200px)
+			font-size: 90px
+			margin: 20px 0px 40px 0px
+			line-height: 70px
+	
+	.b
+		color: #023689
+
+	.h
+		color: #760808
+
+	.interpret
+	    margin: 0 auto
+	    font-weight: bold
+	    @media (min-width: 350px)
+	      font-size: 20px
+	    @media (min-width: 400px)
+	      font-size: 25px
+	    @media (min-width: 450px)
+	      font-size: 30px
+	    @media (min-width: 600px)
+	      font-size: 35px
+	    @media (min-width: 1000px)
+	      font-size: 40px
+	    @media (min-width: 1200px)
+	      font-size: 45px
+	    @media (min-width: 1400px)
+	      font-size: 50px
+.seznam
+  .sekce1, .sekce2, .sekce3
+    height: 400px
+    color: white
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 10px 0px
+
+    @media (min-width: 1024px)
+      height: 550px
+
+    p
+      +tarrum
+      border: 3px solid white
+      font-size: 45px
+      text-transform: uppercase
+      width: 250px
+      padding-top: 5px
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2)
+
+      @media (min-width: 1024px)
+        font-size: 70px
+        line-height: 100px
+        width: 350px
+
+      @media (min-width: 1400px)
+        font-size: 100px
+        width: 500px
+
+    .popis
+      font-size: 14px
+      position: absolute
+      background: white
+      color: black
+      border: 3px solid white
+      text-transform: uppercase
+      padding-top: 5px
+      padding: 10px
+      width: 80%
+      text-transform: none
+      left: 10px
+      bottom: 10px
+      font-size: 14px
+
+    .poslech
+      font-weight: bold
+      position: absolute
+      background: white
+      color: black
+      text-transform: uppercase
+      padding-top: 5px
+      text-transform: none
+      padding: 10px
+      right: -36px
+      font-size: 20px
+      transform: rotate(90deg)
+
+  .sekce1
+    background: #015562
+    position: relative
+    overflow: hidden
+
+    .demo
+      position: absolute
+      z-index: 0
+      width: 650px
+      bottom: 0
+
+    p
+      color: white
+      position: absolute
+      background: #015562
+      line-height: 45px
+      z-index: 2
+      left: 10px
+      top: 20px
+      @media (min-width: 1024px)
+        line-height: 100px
+      @media (min-width: 1400px)
+        line-height: 110px
+
+  .sekce2
+    background: #3D0077
+    position: relative
+    overflow: hidden
+
+    .udg
+      position: absolute
+      z-index: 0
+      width: 500px
+      bottom: 0
+
+    p
+      color: white
+      position: absolute
+      background: #3D0077
+      line-height: 45px
+      z-index: 2
+      left: 10px
+      top: 20px
+      @media (min-width: 1024px)
+        line-height: 100px
+      @media (min-width: 1400px)
+        line-height: 110px
+
+  @media (max-width: 768px)
+    .razeni
+      flex-direction: column !important
+
+  .guitarBG
+    position: absolute
+    margin-left: -100px
+    right: 70%
+    z-index: 0
+
+  .sekce3
+    background: #3D0077
+    position: relative
+    overflow: hidden
+
+    .shoes
+      width: 100%
+      position: absolute
+      z-index: 0
+      right: 50%
+    
+    p
+      +tarrum
+      border: 3px solid white
+      font-size: 45px
+      text-transform: uppercase
+      width: 250px
+      padding-top: 5px
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2)
+      z-index: 2
+      background: #3D0077
+
+      @media (min-width: 1024px)
+        font-size: 70px
+        line-height: 100px
+        width: 350px
+
+      @media (min-width: 1400px)
+        font-size: 100px
+        width: 600px
+
