@@ -50,27 +50,27 @@ class Header extends Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink className="active borderCenter"><Link to="/">Domu</Link></NavLink>
+                <NavLink className="active borderCenter" onClick={this.toggle}><Link to="/">Domu</Link></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className="borderCenter"><Link to="/Lineup">Line-up</Link></NavLink>
+                <NavLink className="borderCenter" onClick={this.toggle}><Link to="/Lineup">Line-up</Link></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className="borderCenter"><Link to="/Doprogram">Doprovodný program</Link></NavLink>
+                <NavLink className="borderCenter" onClick={this.toggle}><Link to="/Doprogram">Doprovodný program</Link></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className="borderCenter"><Link to="/Soutez">Soutěž kapel</Link></NavLink>
+                <NavLink className="borderCenter" onClick={this.toggle}><Link to="/Soutez">Soutěž kapel</Link></NavLink>
               </NavItem>
               <NavItem className="borderCenter">
-                <NavLink href="https://github.com/reactstrap/reactstrap" className="borderCenter">Rozhovory</NavLink>
+                <NavLink className="borderCenter" onClick={this.toggle}>Rozhovory</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap" className="borderCenter">O nás</NavLink>
+                <NavLink className="borderCenter" onClick={this.toggle}>O nás</NavLink>
               </NavItem>
               <NavItem className="center">
                 <div className="icons">
-                  <a href="https://www.facebook.com/MajalesUTB/" target="_blank"><img className='fb' src={fb} alt='fb' /></a>
-                  <a href="https://www.instagram.com/majalesutb/" target="_blank"><img className='ig' src={ig} alt='ig' /></a>
+                  <a href="https://www.facebook.com/MajalesUTB/" onClick={this.toggle} target="_blank"><img className='fb' src={fb} alt='fb' /></a>
+                  <a href="https://www.instagram.com/majalesutb/" onClick={this.toggle} target="_blank"><img className='ig' src={ig} alt='ig' /></a>
                 </div>
               </NavItem>
             </Nav>

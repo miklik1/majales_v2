@@ -25,44 +25,6 @@ class Home extends Component {
 To splňujete všechny podmínky, abyste se zúčastnili letošní Starobrno soutěže kapel a získali do 
 své zkušebny 100 piv zdarma. Vyplň přihlášku do 14. Dubna, nasbírej hlasy od 22. Dubna a vítěze se dozvíš na Majálesu!</p>
       </div>
-      <div className="d-flex bd-highlight razeni lineup">
-          <div className="p-2 flex-fill bd-highlight sekce1 b">
-            <p className="kopyto">Mobil CZ</p>
-            <p className="kopyto">Stage</p>
-            <p className="cas">14.45-15.00</p>
-            <p className="interpret">Qočna</p>
-          </div>
-          <div className="p-2 flex-fill bd-highlight sekce2 h">
-            <p className="kopyto">Captain Morgan</p>
-            <p className="kopyto">Stage</p>
-            <p className="cas">16.00-17.00</p>
-            <p className="interpret">Franz Alpa</p>
-          </div>
-        </div>
-        <div className="seznam">
-        <div className="d-flex bd-highlight razeni">
-          <div className="p-2 flex-fill bd-highlight sekce1">
-            <img className='demo' src={demo} alt='demo' />
-            <p>Kapitán Demo</p>
-            <span className="popis">Nejtlustší česká celebrita, vizionář a mecenáš přijede se svou Demo Crew oznámit, že je Mládí v trapu. 
-              Alternativní rap z jiné dimenze, vlna absurdna, ale v neposlední řadě humor, který ti prodlouží život, když se s ním “svezeš”!
-            </span>
-            <span className="poslech">
-              POSLECH
-            </span>
-          </div>
-          <div className="p-2 flex-fill bd-highlight sekce2">
-            <p>UDG</p>
-            <img className='udg' src={udg} alt='udg' />
-            <span className="popis">Nejtlustší česká celebrita, vizionář a mecenáš přijede se svou Demo Crew oznámit, že je Mládí v trapu. 
-              Alternativní rap z jiné dimenze, vlna absurdna, ale v neposlední řadě humor, který ti prodlouží život, když se s ním “svezeš”!
-            </span>
-            <span className="poslech">
-              POSLECH
-            </span>
-          </div>
-        </div>
-      </div>
     </div>
     );
   }
