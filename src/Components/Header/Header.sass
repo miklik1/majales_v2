@@ -77,6 +77,14 @@
 			left: 15%
 			top: 30px
 
+	.textZoom 
+	    transition: transform 0.3s
+	
+
+	.textZoom:hover 
+	    transform: scale(1.1)
+	
+	
 	.active
 		color: #015562 !important
 
@@ -90,7 +98,7 @@
 		margin: 10px
 
 		@media (min-width: 768px)
-			display: none
+			display: inline-block
 
 		@media (min-width: 1024px)
 			display: inline-block
@@ -100,7 +108,7 @@
 
 	.fb, .ig
 		width: 50px
-		@media (min-width: 1024px)
+		@media (min-width: 768px)
 			width: 30px
 		@media (min-width: 1440px)
 			width: 50px

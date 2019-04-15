@@ -13,20 +13,18 @@ class Vyber extends Component {
       <div className="Vyber">
         <div className="d-flex bd-highlight razeni">
           <div className="p-2 flex-fill bd-highlight sekce1">
-            <Link to="/Lineup"><p>DOPROVODNÝ PROGRAM</p></Link>
+            <Link to="/Doprogram"><p className="textZoom">DOPROVODNÝ PROGRAM</p></Link>
           </div>
           <div className="p-2 flex-fill bd-highlight sekce2">
-            <p>line up</p>
+            <Link to="/Lineup"><p className="textZoom">line up</p></Link>
             <img className='guitars' src={guitars} alt='guitars' />
           </div>
         </div>
         <div className="sekce3">
-          <p>ROZHOVORY S OSOBNOSTMI</p>
+          <Link to="/Cisty"><p className="textZoom">jsme čistý festival</p></Link>
           <img className='shoes' src={shoes} alt='shoes' />
         </div>
       </div>
-
-      <Route path="/Lineup" component={Lineup} />
       </div>
     );
   }

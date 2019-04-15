@@ -23,12 +23,6 @@ class Header extends Component {
     };
   }
   toggle() {
-    var x = document.getElementById("burgr");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
     this.setState({
       isOpen: !this.state.isOpen,
     });
@@ -38,7 +32,7 @@ class Header extends Component {
     return (
       <div className="Header">
          <Navbar color="light" light expand="md">
-          <NavbarBrand  id="burgr" href="/"><img className="logo" src={logo} alt='logo' /></NavbarBrand>
+          <NavbarBrand href="/"><img className="logo" src={logo} alt='logo' /></NavbarBrand>
           <span style={{color: 'white'}}>o</span>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>

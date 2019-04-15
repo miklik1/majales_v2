@@ -63,15 +63,18 @@
     p
       background: #023689
       line-height: 45px
-      z-index: 2
+      z-index: 5
       @media (min-width: 1024px)
         line-height: 100px
+
+    a
+      z-index: 5
 
   @media (max-width: 768px)
     .razeni
       flex-direction: column !important
 
-  .guitarBG, .bricksBG, .guitarsyellowBG
+  .guitarBG, .bricksBG, .guitarsyellowBG, .shoes, .cubeBG
     position: absolute
     margin-left: -100px
     right: 70%
@@ -87,6 +90,9 @@
       position: absolute
       z-index: 0
       right: 50%
+
+    a
+      z-index: 5
     
     p
       +tarrum
@@ -114,5 +120,14 @@
     background: orange !important
   .sekce2
     background: orange 
+
+.about
+  p
+    width: 600px !important
+    background: #015562 !important
+  .sekce2
+    background: #015562
+
+
 
 

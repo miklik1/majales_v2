@@ -5,10 +5,11 @@
 	.kopyto
 		+tarrum
 		font-size: 31px
-		margin-top: 15px
-		line-height: 20px
+		margin-bottom: 15px
+		line-height: 30px
 		@media (min-width: 350px)
 			font-size: 33px
+			line-height: 30px
 		@media (min-width: 375px)
 			font-size: 34px
 		@media (min-width: 400px)
@@ -30,6 +31,20 @@
 			font-size: 90px
 			margin: 20px 0px 40px 0px
 			line-height: 70px
+
+	.cas
+		margin-bottom: -7px
+		@media (min-width: 350px)
+			font-size: 15px
+		@media (min-width: 400px)
+			font-size: 16px
+		@media (min-width: 450px)
+			font-size: 17px
+		@media (min-width: 600px)
+			font-size: 18px
+		@media (min-width: 1000px)
+			font-size: 20px
+
 	
 	.b
 		color: #023689
@@ -38,7 +53,7 @@
 		color: #760808
 
 	.interpret
-	    margin: 0 auto
+	    margin-bottom: 20px
 	    font-weight: bold
 	    @media (min-width: 350px)
 	      font-size: 20px
@@ -55,7 +70,7 @@
 	    @media (min-width: 1400px)
 	      font-size: 50px
 .seznam
-  .sekce1, .sekce2, .sekce3, .sekce4, .sekce5, .sekce6
+  .sekce1, .sekce2, .sekce3, .sekce4, .sekce5, .sekce6, .sekce7, .sekce8, .sekce9, .sekce10
     height: 400px
     color: white
     display: flex
@@ -89,28 +104,30 @@
       position: absolute
       background: white
       color: black
-      border: 3px solid white
-      text-transform: uppercase
-      padding-top: 5px
       padding: 10px
-      width: 80%
       text-transform: none
-      left: 10px
-      bottom: 10px
-      font-size: 14px
-
-    .poslech
-      font-weight: bold
-      position: absolute
-      background: white
-      color: black
-      text-transform: uppercase
-      padding-top: 5px
-      text-transform: none
-      padding: 10px
-      right: -36px
-      font-size: 20px
-      transform: rotate(90deg)
+      bottom: 20px
+      left: 20px
+      right: 20px
+      padding: 20px
+      @media (min-width: 350px)
+      	font-size: 15px
+      @media (min-width: 400px)
+      	font-size: 16px
+      @media (min-width: 450px)
+      	font-size: 17px
+      @media (min-width: 500px)
+      	font-size: 18px
+      @media (min-width: 768px)
+      	font-size: 15px
+      @media (min-width: 1000px)
+      	font-size: 16px
+      @media (min-width: 1200px)
+      	font-size: 17px
+      @media (min-width: 1400px)
+      	font-size: 19px
+      @media (min-width: 1600px)
+      	font-size: 21px
 
   .sekce1
     background: #015562
@@ -120,8 +137,10 @@
     .demo
       position: absolute
       z-index: 0
-      width: 650px
-      bottom: 0
+      width: 600px
+      bottom: 0px
+      @media (min-width: 1024px)
+      	width: 800px
 
     p
       color: white
@@ -144,8 +163,13 @@
     .udg
       position: absolute
       z-index: 0
-      width: 500px
-      bottom: 0
+      width: 300px
+      bottom: 100px
+      @media (min-width: 1024px)
+      	width: 500px
+      	bottom: 0px
+      @media (min-width: 1400px)
+      	width: 700px
 
     p
       color: white
@@ -168,8 +192,11 @@
     .lvcas
       position: absolute
       z-index: 0
-      width: 400px
-      bottom: 0
+      width: 300px
+      bottom: 0px
+      right: 0px
+      @media (min-width: 1024px)
+        width: 400px
 
     p
       color: white
@@ -193,7 +220,16 @@
       position: absolute
       z-index: 0
       width: 400px
-      bottom: 0
+      top: 0
+      @media (min-width: 650px)
+      	width: 500px
+      	right: 0
+      @media (min-width: 1024px)
+      	top: auto
+      	bottom: 100px	
+      @media (min-width: 1650px)
+      	top: 0
+      	width: 700px
 
     p
       color: white
@@ -213,11 +249,20 @@
     position: relative
     overflow: hidden
 
-    .lvcas
+    .circus
       position: absolute
       z-index: 0
-      width: 400px
-      bottom: 0
+      width: 500px
+      top: 0px
+      right: 0
+      @media (min-width: 768px)
+      	bottom: 0px
+      	top: auto
+      	width: 600px
+      @media (min-width: 1200px)
+      	width: 700px
+      @media (min-width: 1500px)
+      	width: 800px
 
     p
       color: white
@@ -237,7 +282,7 @@
     position: relative
     overflow: hidden
 
-    .lvcas
+    .john
       position: absolute
       z-index: 0
       width: 400px
@@ -247,6 +292,96 @@
       color: white
       position: absolute
       background: #FF571D
+      line-height: 45px
+      z-index: 2
+      left: 10px
+      top: 20px
+      @media (min-width: 1024px)
+        line-height: 100px
+      @media (min-width: 1400px)
+        line-height: 110px
+
+  .sekce7
+    background: #015562
+    position: relative
+    overflow: hidden
+
+    .glad
+      position: absolute
+      z-index: 0
+      width: 400px
+      bottom: 0
+
+    p
+      color: white
+      position: absolute
+      background: #015562
+      line-height: 45px
+      z-index: 2
+      left: 10px
+      top: 20px
+      @media (min-width: 1024px)
+        line-height: 100px
+      @media (min-width: 1400px)
+        line-height: 110px
+
+  .sekce8
+    background: #3D0077
+    position: relative
+    overflow: hidden
+
+    .like
+      position: absolute
+      z-index: 0
+      width: 400px
+      bottom: 0
+
+    p
+      color: white
+      position: absolute
+      background: #3D0077
+      line-height: 45px
+      z-index: 2
+      left: 10px
+      top: 20px
+      @media (min-width: 1024px)
+        line-height: 100px
+      @media (min-width: 1400px)
+        line-height: 110px
+
+  .sekce9
+    background: #FF8500
+    position: relative
+    overflow: hidden
+
+    .franc
+      position: absolute
+      z-index: 0
+      width: 400px
+      bottom: 0
+
+    p
+      color: white
+      position: absolute
+      background: #FF8500
+      line-height: 45px
+      z-index: 2
+      left: 10px
+      top: 20px
+      @media (min-width: 1024px)
+        line-height: 100px
+      @media (min-width: 1400px)
+        line-height: 110px
+
+  .sekce10
+    background: #148C14
+    position: relative
+    overflow: hidden
+
+    p
+      color: white
+      position: absolute
+      background: #148C14
       line-height: 45px
       z-index: 2
       left: 10px

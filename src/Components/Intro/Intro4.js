@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import '../Vyber/Vyber.sass';
-import bricks from '../../bricks.png';
+import cubeBG from './cubeBG-pc.png';
 
-class Intro3 extends Component {
+class Intro4 extends Component {
   render() {
     return (
-      <div className="Vyber intro3">
+      <div className="Vyber intro4 rozhovory">
         <div className="d-flex bd-highlight razeni">
           <div className="p-2 flex-fill bd-highlight sekce2">
-            <p>DOPROVODNÝ PROGRAM</p>
-            <img className='bricksBG' src={bricks} alt='bricks' />
+            <p>O nás</p>
+            <img className='cubeBG' src={cubeBG} alt='cubesBG' />
           </div>
         </div>
       </div>
@@ -17,4 +17,4 @@ class Intro3 extends Component {
   }
 }
 
-export default Intro3;
+export default Intro4;
