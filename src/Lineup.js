@@ -100,7 +100,7 @@ class Home extends Component {
                 <div className="d-flex bd-highlight razeni">
           <div className="p-2 flex-fill bd-highlight sekce7">
             <img className='glad' src={glad} alt='glad' />
-            <p>GLAD FORTODay</p>
+            <p>GLAD FOR TODay</p>
             <span className="popis">Hradecká parta, která přinese post-hardcorovou nálož tvrdé muziky. 
             Řízné kytary v kombinaci s částečným screamem, to je něco pro opravdové fajnšmekry tvrdší hudby.
             </span>

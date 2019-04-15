@@ -4,6 +4,7 @@ import './App.sass';
 import './Lineup.sass';
 import './Doprogram.sass';
 import './Components/Vyhod/Vyhod.sass';
+import './About.sass';
 import demo from './demo.png'
 import udg from './udg.png'
 import cubeBG from './Components/Intro/cubeBG-pc.png';
@@ -31,27 +32,36 @@ class Home extends Component {
         <div className="d-flex bd-highlight razeni">
           <div className="p-2 flex-fill bd-highlight sekce1">
             <p>MANAŽER AKCE</p>
-            <span className="popis">Věčná majálesová sláva, roční zásoba piva Starobrno
-             a možnost zahrát si před zlínskou veřejností - to čeká vítěze souboje kapel.
+            <span className="popis">
+            <h4>Martin Drančák</h4>
+            <h5>drancak@sutb.cz</h5>
+            <h5>+420 777 422 479</h5>
             </span>
           </div>
           <div className="p-2 flex-fill bd-highlight sekce2">
             <p>FUNDRAISING</p>
-            <span className="popis">Čistý festival zajišťuje od roku 2008 třídění odpadů na českých
-             hudebních festivalech. Najdi barevné koše nebo náš stánek, třiď odpady a získej recyklované odměny.
+            <span className="popis">
+            <h4>Adam Utíkal</h4>
+            <h5>utikal@sutb.cz</h5>
+            <h5>+420 773 238 792</h5>
             </span>
           </div>
         </div>
         <div className="d-flex bd-highlight razeni">
           <div className="p-2 flex-fill bd-highlight sekce3">
             <p>KAPELY</p>
-            <span className="popis">Takovou párty Zlín ještě neslyšel, aneb nejtišší kalba na střeše jednadvacítky. 
-            To by Baťa koukal! Pro více info sleduj fb událost.
+            <span className="popis">
+            <h4>Barbora Mikolášová</h4>
+            <h5>mikolasova@sutb.cz</h5>
+            <h5>+420 731 780 311</h5>
             </span>
           </div>
           <div className="p-2 flex-fill bd-highlight sekce4">
             <p>PROPAGACE</p>
-            <span className="popis">Tato zahřívačka pro všechny nedočkavce, kterým už skáčou kopýtka před Majálesem. 
+            <span className="popis">
+            <h4>Adam Komůrka</h4>
+            <h5>komurka@sutb.cz</h5>
+            <h5>+420 720 501 131</h5>
             </span>
           </div>
         </div>

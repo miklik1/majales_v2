@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Nejsme.sass';
 import sutb from './sutb.svg';
 import utb from './utb.png';
+import test1 from '../../test1.svg';
 
 class Nejsme extends Component {
   render() {
@@ -11,10 +12,7 @@ class Nejsme extends Component {
         <p className="obyc">Každá akce si žádá své partnery. My můžeme být rádi, že máme ty nejlepší z nejlepších.
         Podívejte se, na čem pracují oni!</p>
         <div className="d-flex bd-highlight razeni">
-          <div className="p-2 flex-fill bd-highlight"><p className="sutb">Majáles UTB pořádá</p></div>
-          <div className="p-2 flex-fill bd-highlight"><img src={sutb} alt="sutb" /></div>
-          <div className="p-2 flex-fill bd-highlight"><p>ve spolupráci s</p></div>
-          <div className="p-2 flex-fill bd-highlight"><img className="utb" src={utb} alt="utb" /></div>
+            <img src={test1} className="zone test1" alt="test1" />
         </div>
       </div>
     );

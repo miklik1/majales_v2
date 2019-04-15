@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Home from './Home';
 import Lineup from './Lineup';
 import Doprogram from './Doprogram';
@@ -19,6 +19,10 @@ import {
 import logo from './Components/Header/logo.svg';
 import fb from './Components/Header/fb.svg';
 import ig from './Components/Header/ig.svg';
+import {
+  CSSTransition,
+  TransitionGroup,
+} from 'react-transition-group';
 
 
 class Header extends Component {
@@ -81,12 +85,23 @@ class Header extends Component {
           </Collapse>
         </Navbar>
       </div>
-
-      <Route path="/" exact component={Home} />
-      <Route path="/Lineup" component={Lineup} />
-      <Route path="/Doprogram" component={Doprogram} />
-      <Route path="/Cisty" component={Soutez} />
-      <Route path="/Onas" component={About} />
+      <Route render={({location}) => (
+              <TransitionGroup>
+        <CSSTransition
+                key={location.key}
+                timeout={1000}
+                classNames="item"
+        >
+          <Switch location={location}>
+            <Route path="/" exact component={Home} />
+            <Route path="/Lineup" component={Lineup} />
+            <Route path="/Doprogram" component={Doprogram} />
+            <Route path="/Cisty" component={Soutez} />
+            <Route path="/Onas" component={About} />
+          </Switch>
+        </CSSTransition>
+      </TransitionGroup>
+      )} />
       </ScrollToTop>
     </Router>
 
