@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.sass';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 
 ReactDOM.render(<BrowserRouter><Route path="/" component={App} /></BrowserRouter>, document.getElementById('root'));

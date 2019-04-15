@@ -22,7 +22,7 @@ class Home extends Component {
        <div className="seznam">
         <div className="d-flex bd-highlight razeni">
           <div className="p-2 flex-fill bd-highlight sekce1">
-            <p>Souboj kapel</p>
+            <p>STAROBRNO SOUTĚŽ KAPEL - 27. 4.</p>
             <span className="popis">Věčná majálesová sláva, roční zásoba piva Starobrno
              a možnost zahrát si před zlínskou veřejností - to čeká vítěze souboje kapel.
             </span>
@@ -36,13 +36,13 @@ class Home extends Component {
         </div>
         <div className="d-flex bd-highlight razeni">
           <div className="p-2 flex-fill bd-highlight sekce3">
-            <p>SILENT DISCO</p>
+            <p>SILENT DISCO - 30. 4.</p>
             <span className="popis">Takovou párty Zlín ještě neslyšel, aneb nejtišší kalba na střeše jednadvacítky. 
             To by Baťa koukal! Pro více info sleduj fb událost.
             </span>
           </div>
           <div className="p-2 flex-fill bd-highlight sekce4">
-            <p>WARM UP PARTY</p>
+            <p>WARM UP - 30. 4.</p>
             <span className="popis">Tato zahřívačka pro všechny nedočkavce, kterým už skáčou kopýtka před Majálesem. 
             </span>
           </div>
